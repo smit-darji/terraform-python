@@ -2,7 +2,7 @@
 
 import boto3
 
-AWS_REGION = "us-east-2"
+AWS_REGION = "us-east-1"
 
 resource = boto3.resource("s3", region_name=AWS_REGION)
 
