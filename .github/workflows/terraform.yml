@@ -45,8 +45,6 @@ name: On Push Run
 
 on: push
 
-env:
-  DEVOPS_DIR: devops
 
 jobs:
   hello-world:
@@ -59,6 +57,7 @@ jobs:
       #   repository: https://github.com/smit-darji/terraform-pythonjcdan3/devops
     - name: install Boto3
       run: pip install boto3
+
     - name: Hello World
       run: python hi.py
-      shell: sh
+      # shell: sh
